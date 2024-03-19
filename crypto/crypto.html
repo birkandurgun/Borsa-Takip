@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="crypto.css">
+    <link rel="stylesheet" href="/header/header.css">
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+    <div class="container">
+        <div class="table-title">
+            <h3>Kripto</h3>
+        </div>
+
+        <div class="live-tables">
+            <table class="stockTable" id="table1"></table>
+            <table class="stockTable" id="table2"></table>
+            <table class="stockTable" id="table3"></table>
+        </div>
+
+    </div>
+
+    <script src="/config.js"></script>
+    <script src="crypto.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#header-container").load("/header/header.html");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<div class="header-container">
+    <div class="header" id="header">
+
+    </div>
+
+    <div class="navbar-container">
+        <img class="logo" src="/finans-high-resolution-logo.png" alt="logo">
+
+        <div class="navbar">
+            <ul>
+                <li><a href="/borsa/borsa.html">Canlı Borsa</a></li>
+                <li><a href="/currency-converter/currency-converter.html">Döviz Çevirici</a></li>
+                <li><a href="/crypto/crypto.html">Kripto</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    var header = document.getElementById("header");
+    const proxyUrl = 'https://api.allorigins.win/raw?url=';
+    const apiUrl = 'https://api.genelpara.com/embed/para-birimleri.json';
+
+    function fetchData() {
+        fetch(proxyUrl + encodeURIComponent(apiUrl))
+            .then((response) => {
+                return response.json();
+            })
+            .then((json) => {
+                header.innerHTML = "";
+                let data = header.innerHTML;
+                Object.keys(json).forEach(currency => {
+                    const { satis, degisim } = json[currency];
+                    let currencyName = "";
+                    switch (currency) {
+                        case "USD":
+                            currencyName = "Dolar";
+                            break;
+                        case "EUR":
+                            currencyName = "Euro";
+                            break;
+                        case "GBP":
+                            currencyName = "Sterlin";
+                            break;
+                        case "GA":
+                            currencyName = "Gram Altın";
+                            break;
+                        case "C":
+                            currencyName = "Çeyrek Altın";
+                            break;
+                        case "GAG":
+                            currencyName = "Cumhuriyet Altını";
+                            break;
+                        case "BTC":
+                            return;
+                        case "ETH":
+                            return;
+                        case "XU100":
+                            currencyName = "BIST100";
+                            break;
+                    }
+                    const change = parseFloat(degisim) >= 0 ? `+${degisim}` : degisim;
+                    let classForChange = "";
+                    if (parseFloat(degisim) > 0) {
+                        classForChange = "header-positive-change"
+                    } else if (parseFloat(degisim) < 0) {
+                        classForChange = "header-negative-change"
+                    } else {
+                        classForChange = "header-no-change"
+                    }
+                    data +=
+                        `
+            <div class="currency">
+                <div class="currency-change">${currencyName}  <span class="${classForChange}">${change}</span></div>
+                <div class="value ${classForChange}">${satis}</div>
+            </div>
+            `;
+                });
+                header.innerHTML = data;
+            })
+    }
+
+    fetchData();
+
+    setInterval(fetchData, 1000);
+</script>

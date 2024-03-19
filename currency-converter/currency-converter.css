@@ -1,0 +1,57 @@
+.converter-container {
+    width: 40%;
+    margin: auto;
+    border: 1px solid rgba(156, 197, 219, 0.3);
+    background-color: rgba(156, 197, 219, 0.3);
+    border-radius: 1.5vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+
+.converter-head{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 1vh;
+}
+
+.currency-container {
+    margin-top: 1vh;
+}
+
+.currency-container div {
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    padding-bottom: 2vh;
+
+}
+
+.currency-container select {
+    flex: 1;
+}
+
+input {
+    width: 50%;
+    height: 5vh;
+    margin: 13px 0 0 -5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: solid 1px #cbc9c9;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
+    background: #fff;
+    font-size: medium;
+}
+
+select {
+    width: 50%;
+    height: 5vh;
+    margin: 13px 0 0 -5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: solid 1px #cbc9c9;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
+    background: #fff;
+    font-size: medium;
+}

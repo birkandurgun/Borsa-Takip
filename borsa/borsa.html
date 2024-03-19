@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/borsa/borsa.css">
+    <link rel="stylesheet" href="/header/header.css">
+
+    <title>Canlı Borsa Takip</title>
+
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+
+    <div class="container">
+        <div class="table-title">
+            <h3>Canlı Borsa</h3>
+        </div>
+
+        <div class="live-tables">
+            <table class="stockTable" id="table1"></table>
+            <table class="stockTable" id="table2"></table>
+            <table class="stockTable" id="table3"></table>
+        </div>
+
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $("#header-container").load("/header/header.html");
+    });
+</script>
+
+<script src="borsa.js"></script>
+
+</html>

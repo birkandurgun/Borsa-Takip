@@ -1,0 +1,100 @@
+body {
+    margin: 0px;
+}
+
+/*currency*/
+.header-container {
+    background-color: #f2f2f2;
+    margin: 0px;
+}
+
+.header {
+    border-top: 1px solid rgba(156, 197, 219, 0.5);
+    border-bottom: 1px solid rgba(156, 197, 219, 0.5);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+}
+
+.currency:first-child {
+    margin-left: 0px;
+    border-left: 0px;
+}
+
+.currency {
+    margin-left: 1vh;
+    padding: 0.5vh;
+    margin: auto;
+    border-left: 1px solid rgba(156, 197, 219, 0.5);
+    font-size: 2vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.currency-change {
+    font-weight: bold;
+}
+
+.header-positive-change {
+    color: rgb(43, 124, 79);
+}
+
+.header-negative-change {
+    color: rgb(177, 16, 19);
+}
+
+.value {
+    font-weight: bolder;
+}
+
+/*navbar*/
+.navbar-container {
+    background-color: rgb(131, 134, 185);
+    height: 7.5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-container .logo {
+    height: 100%;
+    width: 10%;
+}
+
+.navbar {
+    width: 50%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.navbar ul li {
+    display: inline-flex;
+    margin-left: 1vh;
+    height: 100%;
+}
+
+.navbar ul li a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    color: #ffffff;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.8vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(116, 117, 158, 0.8);
+    transition: background-color 0.3s ease;
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Currency</title>
+    <script src="currency-converter.js"></script>
+    <link rel="stylesheet" href="currency-converter.css">
+    <link rel="stylesheet" href="/header/header.css">
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+    <div class="converter-container">
+
+        <div class="converter-head">
+            <h2>Döviz Çevirici</h2>
+        </div>
+
+        <div class="currency-container">
+            <div>
+                <input type="number" id="fromAmount" class="amount">
+                <select name="" id="from"></select>
+            </div>
+            
+
+            <div>
+                <input type="number" id="toAmount" class="amount">
+                <select name="" id="to"></select>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function(){
+        $("#header-container").load("/header/header.html");
+    });
+</script>
+
+</html>
