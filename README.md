@@ -18,8 +18,11 @@ This web application pulls data from APIs and provides users with the opportunit
 ## APIs
 
 https://www.sabah.com.tr/json/canli-borsa-verileri
+
 https://api.genelpara.com/embed/borsa.json
+
 https://developers.coinranking.com/api/documentation/coins/coins
+
 https://www.frankfurter.app/docs/
 
 ## Screenshots
