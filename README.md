@@ -27,3 +27,14 @@ https://www.frankfurter.app/docs/
 
 ## Screenshots
 
+## BIST
+
+![bist](https://github.com/birkandurgun/Borsa-Takip/blob/main/images/bist.png) 
+
+## Currency Converter
+
+![currency-converter](https://github.com/birkandurgun/Borsa-Takip/blob/main/images/currency-converter.png) 
+
+## Crypto
+
+![crypto](https://github.com/birkandurgun/Borsa-Takip/blob/main/images/crypto.png) 
